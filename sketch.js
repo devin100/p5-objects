@@ -23,19 +23,19 @@ function pacman(x, y){
         radians(this.radT + this.rotation), PIE);
     };
     this.move = function(){
-        if(KeyIsDown(UP_ARROW)){
+        if(keyIsDown(UP_ARROW)){
           this.y -= 5;  
           this.rotation = 270;
         }
-        if(KeyIsDown(DOWN_ARROW)){
+        if(keyIsDown(DOWN_ARROW)){
           this.y += 5;
           this.rotation = 90;
         }
-        if(KeyIsDown(RIGHT_ARROW)){
+        if(keyIsDown(RIGHT_ARROW)){
           this.x += 5;
           this.rotation = 0;
         }
-        if(KeyIsDown(LEFT_ARROW)){
+        if(keyIsDown(LEFT_ARROW)){
           this.x -= 5;
           this.rotation = 180
         }
