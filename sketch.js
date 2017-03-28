@@ -37,15 +37,15 @@ function pacman(x, y){
         }
         if(keyIsDown(LEFT_ARROW)){
           this.x -= 5;
-          this.rotation = 180
+          this.rotation = 180;
         }
     };
         this.boundary = function(){
         if(this.x > width){
-        this.x = 0;
+            this.x = 0;
         }
         if(this.x < 0){
-           this.x = width
+           this.x = width;
         }
         if(this.y > height){
            this.y = 0;
