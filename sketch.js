@@ -3,11 +3,10 @@ function setup(){
     p1 = new pacman(300, 200)
 }
 
-
 function draw(){
     background(0);
     p1.display();
-p1.move();
+    p1.move();
 }
 
 function pacman(x, y){
@@ -41,8 +40,8 @@ function pacman(x, y){
         }
     };
         this.boundary = function(){
-            if(this.x > width)
-            this.x = 0;
+        if(this.x > width){
+        this.x = 0;
         }
         if(this.x < 0){
            this.x = width
@@ -53,6 +52,6 @@ function pacman(x, y){
          if(this.y < 0){
              this.y = height;
          }
-    
     }
+}
 
