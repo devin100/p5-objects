@@ -7,11 +7,12 @@ function draw(){
     background(0);
     p1.display();
     p1.move();
+    p1.boundary();
 }
 
 function pacman(x, y){
-    this.x = 300;
-    this.y = 200;
+    this.x = x;
+    this.y = y;
     this.radB = 30;
     this.radT = 305;
     this.rotation = 0;
